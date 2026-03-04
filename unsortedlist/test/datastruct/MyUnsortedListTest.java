@@ -22,49 +22,49 @@ public class MyUnsortedListTest {
 	
 	@Test
 	public void list_size_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> sizerfour = MyUnsortedList.of(1, 2, 3, 4);
 		assertEquals(4, sizerfour.size());		
 	}
 	
 	@Test
 	public void empty_list_size_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> empty = MyUnsortedList.of();
 		assertEquals(0, empty.size());
-		
+		//Espace inutile
 	}
 	
 	@Test
 	public void prepend_list_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-		
+		//Espace inutile
 		list.prepend(5);
 		assertEquals(5, (int)list.pop());
 	}
 	
 	@Test
 	public void prepend_empty_list_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> empty = MyUnsortedList.of();
-		
+		//Espace inutile
 		empty.prepend(8);
 		assertEquals(8, (int)empty.pop());
 	}
 	
 	@Test
 	public void append_list_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-
+		//Espace inutile
 		list.append(5);
 		assertEquals(5, (int)list.popLast());
 	}
 
 	@Test
 	public void append_empty_list_test() {
-		
+		//Espace inutile
 		UnsortedList<Integer> empty = MyUnsortedList.of();
 		empty.append(8);
 		assertEquals(8, (int)empty.popLast());
@@ -72,63 +72,63 @@ public class MyUnsortedListTest {
 
 	@Test
 	public void insert_like_prepend_test() throws Exception{
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-		
+		//Espace inutile
 		list.insert(15, 0);
 		assertEquals(15, (int)list.remove(0));
 	}
 	
 	@Test
 	public void insert_like_append_test() throws Exception{
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-		
+		//Espace inutile
 		list.insert(5, 2);
 		assertEquals(5, (int)list.remove(2));
 	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
 	public void insert_index_higher_than_size_test() throws Exception{
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-		
+		//Espace inutile
 		list.insert(5, 5);	
-
+		//Espace inutile
 	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
 	public void insert_index_lower_than_size_test() throws Exception{
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 4);
-
+		//Espace inutile
 		list.insert(-1, 5);		
 	}
 	
 	@Test
 	public void inserts_successives_test() throws Exception{
-		
+		//Espace inutile
 		UnsortedList<Integer> list = MyUnsortedList.of(1, 2, 3, 7);		
 		list.insert(40, 3);
-		
+		//Espace inutile
 		list.insert(50, 4);
-		
+		//Espace inutile
 		list.insert(60, 5);
-		
+		//Espace inutile
 		assertEquals(50, (int)list.remove(4));
 	}
 	
 	  @Test
 	    public void test_pop_simple() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 6, (int) list.pop());
 	    }
 	    
 	    @Test
 	    public void test_pop_double() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 6, (int) list.pop());
 	        assertEquals((int) 5, (int) list.pop());
 	    }
@@ -136,30 +136,30 @@ public class MyUnsortedListTest {
 	    @Test(expected = EmptyListException.class)
 	    public void test_pop_Empty() {
 	        UnsortedList<Integer> list = MyUnsortedList.of();
-	        
+	        //Espace inutile
 	        list.pop();
 	    }
 	    
 	    @Test(expected = EmptyListException.class)
 	    public void test_pop_Empty2() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(5);
-	        
+	        //Espace inutile
 	        assertEquals((int) 5, (int) list.pop());
-	        
+	        //Espace inutile
 	        list.pop();
 	    }
 	    
 	    @Test
 	    public void test_remove_simple() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 6, (int) list.remove((Integer) 0));
 	    }
 	    
 	    @Test
 	    public void test_remove_double() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 6, (int) list.remove((Integer) 0));
 	        assertEquals((int) 4, (int) list.remove((Integer) 1));
 	    }
@@ -167,28 +167,28 @@ public class MyUnsortedListTest {
 	    @Test(expected = IndexOutOfBoundsException.class)
 	    public void test_remove_Empty() {
 	        UnsortedList<Integer> list = MyUnsortedList.of();
-	        
+	        //Espace inutile
 	        list.remove(0);
 	    }
 	    
 	    @Test(expected = IndexOutOfBoundsException.class)
 	    public void test_remove_indexOutOfBounds() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        list.remove(4);
 	    }
 	    
 	    @Test
 	    public void test_popLast_simple() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 3, (int) list.popLast());
 	    }
 	    
 	    @Test
 	    public void test_popLast_double() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        assertEquals((int) 3, (int) list.popLast());
 	        assertEquals((int) 4, (int) list.popLast());
 	    }
@@ -196,34 +196,34 @@ public class MyUnsortedListTest {
 	    @Test(expected = EmptyListException.class)
 	    public void test_popLast_Empty() {
 	        UnsortedList<Integer> list = MyUnsortedList.of();
-	        
+	        //Espace inutile
 	        list.popLast();
 	    }
 	    
 	    @Test
 	    public void test_remove_size() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        list.remove(2);
-	        
+	        //Espace inutile
 	        assertEquals(3, list.size());
 	    }
 	    
 	    @Test
 	    public void test_pop_size() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        list.pop();
-	        
+	        //Espace inutile
 	        assertEquals(3, list.size());
 	    }
 	    
 	    @Test
 	    public void test_popLast_size() {
 	        UnsortedList<Integer> list = MyUnsortedList.of(6, 5, 4, 3);
-	        
+	        //Espace inutile
 	        list.popLast();
-	        
+	        //Espace inutile
 	        assertEquals(3, list.size());
 	    }
 	    
@@ -231,7 +231,7 @@ public class MyUnsortedListTest {
 	    public void test_lists_equal() {
 			UnsortedList<Integer> list1 = MyUnsortedList.of(1, 2, 3, 4);
 			UnsortedList<Integer> list2 = MyUnsortedList.of(1, 2, 3, 4);
-			
+			//Espace inutile
 			assertTrue(list1.equals(list2));			
 	    }
 	    
@@ -239,16 +239,16 @@ public class MyUnsortedListTest {
 	    public void test_lists_notEqual() {
 			UnsortedList<Integer> list1 = MyUnsortedList.of(1, 2, 3, 4);
 			UnsortedList<Integer> list2 = MyUnsortedList.of(1, 2, 5, 4);
-			
+			//Espace inutile
 			assertFalse(list1.equals(list2));			
 	    }
 	    
 	    @Test
 	    public void test_tostring() {
 			UnsortedList<Integer> list1 = MyUnsortedList.of(1, 2, 3, 4);
-			
+			//Espace inutile
 			System.out.println(list1);
-			
+			//Espace inutile
 			assertEquals(list1.toString(), "MyUnsortedList { size = 4, [1, 2, 3, 4] }");			
 	    }
 	
